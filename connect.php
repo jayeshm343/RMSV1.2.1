@@ -1,10 +1,12 @@
 <?php
-header("Access-Control-Allow-Origin: *",false);
+header("Access-Control-Allow-Origin: *");
+header('Access-Control-Allow-Headers:*');
+header('Access-Control-Allow-Methods:*');
 
 $servername = "localhost";
 $username = "root";
-$password = "";
-$dbname = "puzzles";
+$password = "root";
+$dbname = "puzzle";
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 

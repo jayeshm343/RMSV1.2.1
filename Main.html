@@ -302,7 +302,7 @@ if (window.XMLHttpRequest) {
         };
         var e = document.getElementById("ddlViewBy");
         var strUser = e.options[e.selectedIndex].value;
-        xmlhttp.open("GET","updateDB.php?value="+x + "&order=" + strUser,true);
+        xmlhttp.open("GET","http://localhost/RMSV1.2.1/updateDB.php?value="+x + "&order=" + strUser,true);
         console.log("updateDB.php?value="+x);
         xmlhttp.send();
     }

@@ -163,7 +163,7 @@
             addItem(this, name);
             }
         };
-        xhttp.open("GET", "index1.php", true);
+        xhttp.open("GET", "http://localhost/RMSV1.2.1/index1.php", true);
         xhttp.send();
         }
 
@@ -171,14 +171,14 @@
 
         function loadDoc(type) {
         var xhttp = new XMLHttpRequest();
+        xhttp.open("GET", "http://localhost/RMSV1.2.1/index1.php", true);
+        xhttp.send();
         
         xhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
               myFunction(this, type);
             }
         };
-        xhttp.open("GET", "index1.php", true);
-        xhttp.send();
         }
 
 
