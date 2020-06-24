@@ -1,0 +1,294 @@
+<html>
+
+<head>
+
+    <title>Puzzles</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+
+        @font-face {
+            font-family: font1;
+            src: url(KaushanScript-Regular.otf);
+        }
+
+        @font-face {
+            font-family: font2;
+            src: url(fontawesome-webfont.woff);
+        }
+
+        @font-face {
+            font-family: font3;
+            src: url(Montserrat-UltraLight.otf);
+        }
+
+        .menu{
+            background-color: black;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            opacity: 0.9;
+        }
+
+        .f5{
+            background-color: black;
+            float: right;
+            display:block;
+            color: white;
+            text-align: center;
+            padding: 33px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            top: 50%;
+
+        }
+
+        .f5:hover{
+            color: rgb(251,217,158);
+        }
+
+        #current {
+            color: rgb(251,217,158);
+        }
+
+        .container{
+
+            background-image: url("unknown.jpeg");
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        .caption{
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: font1;
+        }
+
+        .f1{
+            display: inline-block;
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+
+       input,select{
+            border: 1px solid #B38C81;
+            border-radius: 3px;
+            height:30px;
+            width:364px;
+            padding-left:23px;
+        }
+
+        .resrv{
+            background-position: 1.75% 50%;
+            background-repeat: no-repeat;
+            background-size: 10px;
+        }
+
+        .user{ background-image: url(user.png); }
+        .email{ background-image: url(email.png); }
+        .date{ background-image: url(calendar.png); }
+        .time{ background-image: url(time.png); }
+
+        .newsletter{
+            background-color:blue;
+            text-align: center;
+            padding: 25px 0px 10px 0px;
+        }
+
+
+        .fa{
+            padding:8px;
+            font-size: 18px;
+            width: 18px;
+            text-decoration: none;
+            border-radius: 50%;
+            text-align: center;
+            background:rgba(255,255,255,0.15);
+            color: white;
+        }
+
+        .fa:hover{
+            background:rgba(255,255,255,0.25);
+            color: rgb(251,217,158);
+        }
+
+        .chef{
+            height: 850px;
+            width:250px;
+            margin: 0px 20px 40px 20px;
+            border-radius: 5px;
+        }
+
+        .term{
+            text-decoration: none;
+            color: white;
+        }
+
+
+
+
+    </style>
+</head>
+
+<body style="background-color:black; margin:0px; color:white; font-family:font3;">
+
+        <div class="container">
+            <div class="caption">
+                <h1>Discover</h1><h1>PUZZLES</h1>
+                <h3>OPENING HOURS</h3>
+                <h5>MON- FRI: 08:00 AM - 10:00 PM</h5>
+                <h5>SAT - SUN: 10:00 AM - 11:00 PM</h5>
+
+            </div>
+        </div>
+
+
+        <div class="menu">
+            <h1 style="font-family: font1; color: rgb(251,217,158); float:left; padding-left:50px;">PUZZLES</h1>
+            <a class="f5" href="orderonline.html" >ORDER ONLINE</a>
+            <a class="f5"  href="apple.html">I'm at the Restaurant</a>
+            <a class="f5"  href="menu.html">MENU</a>
+            <a class="f5" id="current" href="hello.html">HOME</a>
+        </div>
+
+        <div style=" background-color:white;  color:#B38C81;" >
+
+        </div>
+
+
+
+        <div style="text-align:center;">
+
+            <h1 style="font-family: font1; color: rgb(251,217,158);">Chef's Recommendation</h1>
+            <img class="chef" src="peppers.jpg">
+            <img class="chef" src="bites.jpg">
+            <img class="chef" src="samosa.jpg">
+            <img class="chef" src="noodles.jpg">
+
+        </div>
+
+            <div  style=" background-color:white;  color:#B38C81;" ><div class="f1" style="width:34%;  text-align:center; ">
+
+                <img style="height:539px; width:361px;" src="table1.jpeg">
+            </div ><div class="f1" style=" height:515px; width:32%; ">
+
+                <form style="text-align:center;" method="post" action="order.php">
+
+                    <center><h1 style="font-family: font1;">Reservation</h1>
+                        <h1>BOOK YOUR TABLE</h1></center>
+
+
+                    <input class="resrv user" type="text" name="name" placeholder="Your name" required><br><br><br>
+
+                    <input class="resrv email" type="email" name="email2" placeholder="Your email" required><br><br><br>
+
+                    <input class="resrv date" type="date" name="date" required><br><br><br>
+
+                    <input class="resrv time" type="time" name="time" required><br><br><br>
+
+                    <select name="members">
+                        <option value="1 person">1 person</option>
+                        <option value="2 people">2 people</option>
+                        <option value="3 people">3 people</option>
+                        <option value="4 people" selected>4 people</option>
+                        <option value="5 people">5 people</option>
+                        <option value="6 people">6 people</option>
+                        <option value="7 people">7 people</option>
+                        <option value="8 people">8 people</option>
+                        <option value="9 people">9 people</option>
+                        <option value="10people">10 people</option>
+                    </select>
+
+                    <br><br><br>
+
+                    <input style="padding:0px; border-color:black; background-color:black; color:white;" type="submit" value="FIND A TABLE">
+
+                    <br><br><br>
+
+
+                </form>
+
+            </div><div class="f1" style=" width:34%; text-align:center;">
+                <img style="height:539px; width:361px;" src="table2.jpeg">
+            </div>
+
+            </div>
+
+
+
+            <div class="newsletter">
+
+                <form style="border-top: 2px dashed white;
+                             border-bottom: 2px dashed white;
+                             padding:30px;" method="post" action="submit.php">
+
+                    <label>Subscribe to our newsletter </label><input style="width:300px; padding: 10px; border:none; margin:5px; " type="email" placeholder="Enter your email address" name="email1" required>
+
+                    <input onclick="okay();" style="width:100px; background-color:green; padding:0px; color:white; border:none;" type="submit">
+
+                </form>
+
+            </div>
+
+            <div><hr><center>
+                <a href="apple.html" class="fa fa-facebook"></a>
+                <a href="apple.html" class="fa fa-twitter"></a>
+                <a href="apple.html" class="fa fa-instagram"></a>
+                <a href="apple.html" class="fa fa-linkedin"></a>
+            </center><hr>
+            </div>
+
+
+            <footer>
+                <div st>
+                    <h5 style="float:left; padding-left:10px;">Copyright Puzzles 2017. All rights reserved.</h5>
+                    <h5 style="float:right; padding-right:10px;"><a href="hello.html" class="term">Policies</a> | <a href="hello.html" class="term">Disclaimer</a> | <a href="hello.html" class="term">Terms and Conditions</a></h5>
+                </div>
+            </footer>
+
+
+<script>
+function okay() {
+    alert("You have been suscribed!");
+}
+</script>
+
+<?php
+
+include "connect.php";
+
+$email1 = $_POST["email1"];
+
+$sql = "INSERT INTO newsletter (email) VALUES('$email1')";
+
+mysqli_query($conn, $sql);
+?>
+
+<?php
+
+include "connect.php";
+
+$name = $_POST["name"];
+$email2 = $_POST["email2"];
+$date1 = $_POST["date"];
+$time = $_POST["time"];
+$members = $_POST["members"];
+
+$sql = "INSERT INTO reservation (name, email, date, time, people) VALUES('$name','$email2', '$date1', '$time', '$members')";
+
+mysqli_query($conn, $sql);
+?>
+
+
+
+</body>
+
+</html>
