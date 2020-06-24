@@ -1,5 +1,9 @@
 <?php
 
+header("Access-Control-Allow-Origin: *");
+header('Access-Control-Allow-Headers:*');
+header('Access-Control-Allow-Methods:*');
+
 include 'connect.php';
 
 if (!isset($_COOKIE["table_number"]))
@@ -13,7 +17,7 @@ $stuff = array("Water", "clean", "Util", "Bill", "parcel","other");
 $valueToBeChanged = $_GET['value'];
 $val = $stuff[$valueToBeChanged];
 $order = $_GET['order'];
-$sql = "update atrest set $val = 1 where ID = $order";
+$sql = "update atrest set val = 1 where ID = $order";
 
 if ($conn->query($sql) === TRUE) {
    
